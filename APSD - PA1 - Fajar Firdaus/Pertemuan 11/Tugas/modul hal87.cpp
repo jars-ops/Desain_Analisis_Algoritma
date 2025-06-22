@@ -2,7 +2,7 @@
 #include <limits.h>
 using namespace std;
 
-#define V 7  // Jumlah vertex
+#define V 7 
 
 int minDistance(int dist[], bool sptSet[]) {
     int min = INT_MAX, min_index;
@@ -40,14 +40,13 @@ void dijkstra(int graph[V][V], int src) {
 
 int main() {
     int graph[V][V] = {
-        // 0  1  2  3  4  5  6
-        { 0, 7, 0, 0, 0, 0, 9 },   // 0
-        { 7, 0,11, 8, 0, 0,14 },   // 1
-        { 0,11, 0,10,15, 0, 0 },   // 2
-        { 0, 8,10, 0,11, 0, 2 },   // 3
-        { 0, 0,15,11, 0, 6, 0 },   // 4
-        { 0, 0, 0, 0, 6, 0, 9 },   // 5
-        { 9,14, 0, 2, 0, 9, 0 }    // 6
+        { 0, 7, 0, 0, 0, 0, 9 },
+        { 7, 0,11, 8, 0, 0,14 },
+        { 0,11, 0,10,15, 0, 0 },
+        { 0, 8,10, 0,11, 0, 2 },
+        { 0, 0,15,11, 0, 6, 0 },
+        { 0, 0, 0, 0, 6, 0, 9 },
+        { 9,14, 0, 2, 0, 9, 0 }
     };
 
     dijkstra(graph, 0);
